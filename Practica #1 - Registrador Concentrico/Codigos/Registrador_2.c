@@ -27,7 +27,7 @@ char current_phase;
 void setup() {
   // put your setup code here, to run once:
   DDRD = B1110000; //PORTD pin [7:5] configured as outputs & PORTD pin [4:0] configured as inputs 
-  DDRB |= B0000101; //PORTB pin 2 & 0 configured as inputs
+  DDRB |= B0000101; //PORTB pin 2 & 0 configured as outputs
   delay (50); 
   PORTB &= B11111010; //PORTB pin 2 & 0 set as 0
   PORTD &= B00011111; //PORTD pin [7:5] set as 0
